@@ -1,0 +1,27 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "Weather app with p5.js and Music API",
+  "main": "spotify.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slw515/Weather-Ambiance-Application.git"
+  },
+  "keywords": [
+    "Weather",
+    "App"
+  ],
+  "author": "Steven Wyks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slw515/Weather-Ambiance-Application/issues"
+  },
+  "homepage": "https://github.com/slw515/Weather-Ambiance-Application#readme",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "soundcloud": "^3.3.2"
+  }
+}

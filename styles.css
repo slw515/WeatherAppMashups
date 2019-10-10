@@ -1,0 +1,217 @@
+@font-face {
+  font-family: "futura-regular";
+  src: url("futura/Futura\ Heavy\ font.ttf");
+}
+@font-face {
+  font-family: "futura-bold";
+  src: url("futura/Futura\ Bold\ font.ttf");
+}
+
+body {
+  margin: 0;
+  background: black !important;
+  transition: 300ms ease all;
+}
+
+#inputButton {
+  width: 50px;
+  height: 50px;
+  background: #37adbf;
+  border: none;
+  margin: 5% auto 5% auto;
+  transform: rotate(45deg);
+  transition: 800ms ease all;
+}
+button {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22);
+}
+button:hover {
+  color: #1aab8a;
+  background: darken(#37adbf, 5%);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.28), 0 4px 15px 0 rgba(0, 0, 0, 0.25);
+}
+button:before,
+button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #1aab8a;
+  transition: 400ms ease all;
+}
+button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+button:hover:before,
+button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+.infoContainer {
+  margin: 0 auto;
+  /* position: absolute; */
+  text-align: center;
+  bottom: 0%;
+  border-style: hidden;
+  width: 25%;
+  background: white;
+  min-height: 30%;
+  max-height: 45%;
+  border-radius: 0 0 50px 50px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.infoContainer #locationHTML {
+  font-family: "futura-bold", sans-serif;
+  font-size: 3vw;
+  opacity: 1;
+}
+.makeBold {
+  color: black;
+  font-size: 1.9vw;
+}
+.infoContainer div {
+  font-family: "futura-regular", sans-serif;
+  font-size: 2.1vw;
+  opacity: 1;
+}
+
+#cityName {
+  margin: 3% auto 3% auto;
+}
+
+.infoContainer #humidity {
+  float: left;
+  width: 50%;
+}
+
+#twoRows:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.infoContainer #temp {
+  float: left;
+  width: 50%;
+}
+
+.bottomTime {
+  position: absolute;
+  width: 16%;
+  height: 120px;
+  background: white;
+  bottom: 0px;
+  right: 25%;
+  left: 50%;
+  margin-left: -8%;
+  opacity: 0.5;
+  text-align: center;
+  border-radius: 50px 50px 0 0;
+}
+
+.bottomTime #currentTime {
+  font-family: "futura-regular", sans-serif;
+  font-size: 4vw;
+  opacity: 1;
+  /* margin-top: 5%; */
+}
+
+#sc-widget {
+  height: 375px;
+  width: 45%;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#defaultCanvas0 {
+  opacity: 0.4;
+}
+
+#reveal {
+  position: absolute;
+  top: 0%;
+  left: 4%;
+  width: 9%;
+  height: 12%;
+  border-radius: 0 0 30px 30px;
+}
+
+#soundcloudLogo {
+  pointer-events: none;
+  display: none;
+}
+
+#closeSoundcloud {
+  pointer-events: none;
+  display: inline;
+  /* width: 70%; */
+  /* height: 70%; */
+}
+
+@media all and (max-width: 1000px) {
+  .infoContainer {
+    width: 35%;
+  }
+  .infoContainer #locationHTML {
+    font-size: 3.2vw;
+  }
+  .makeBold {
+    font-size: 2.8vw;
+  }
+  .infoContainer div {
+    font-size: 2.5vw;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .infoContainer {
+    width: 40%;
+  }
+  .infoContainer #locationHTML {
+    font-size: 3.6vw;
+  }
+  .makeBold {
+    font-size: 3.2vw;
+  }
+  .infoContainer div {
+    font-size: 3vw;
+  }
+}
+@media all and (max-width: 600px) {
+  .infoContainer {
+    width: 45%;
+  }
+  .infoContainer #locationHTML {
+    font-size: 3.8vw;
+  }
+  .makeBold {
+    font-size: 3.6vw;
+  }
+  .infoContainer div {
+    font-size: 3.3vw;
+  }
+}
+@media all and (max-width: 400px) {
+  .infoContainer {
+    width: 55%;
+  }
+  .infoContainer #locationHTML {
+    font-size: 9vw;
+  }
+  .makeBold {
+    font-size: 5.4vw;
+  }
+  .infoContainer div {
+    font-size: 4.6vw;
+  }
+}
