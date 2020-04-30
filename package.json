@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/slw515/Weather-Ambiance-Application#readme",
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "soundcloud": "^3.3.2"
   }
 }
